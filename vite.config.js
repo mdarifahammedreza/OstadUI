@@ -6,7 +6,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
-    host: 'ostadui-1.onrender.com',  // Allow the server to listen on all interfaces
-    port: 5173,       // Ensure it uses port 5173
+    host: true,       // or '0.0.0.0' to listen on all network interfaces
+    port: 5173,       // default Vite port
   },
 })
